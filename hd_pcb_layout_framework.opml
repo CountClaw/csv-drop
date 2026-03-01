@@ -5,43 +5,51 @@
   </head>
   <body>
     <outline text="高速数字PCB Layout 工程师知识框架">
-      <outline text="1. 电子/系统基础">
-        <outline text="1.1 数字电路基础（时序/抖动/同步异步）"/>
-        <outline text="1.2 常见高速接口基础（DDR/PCIe/USB/HDMI/MIPI/Ethernet）"/>
-        <outline text="1.3 器件与封装基础（BGA/QFN/连接器/寄生）"/>
+      <outline text="1. 岗位流程与协作（从需求到交付）">
+        <outline text="1.1 输入澄清（原理图/约束/结构/板厂能力）"/>
+        <outline text="1.2 评审机制（摆位评审/走线评审/DFM评审）"/>
+        <outline text="1.3 交付物（Gerber/ODB++/钻孔/叠层/阻抗表/装配资料）"/>
+        <outline text="1.4 ECO/版本管理（变更记录/可追溯）"/>
       </outline>
-      <outline text="2. 传输线与信号完整性（SI）">
-        <outline text="2.1 传输线模型（阻抗/反射/延迟/损耗）"/>
-        <outline text="2.2 串扰（NEXT/FEXT/耦合路径）"/>
-        <outline text="2.3 差分信号（差模/共模/模式转换/skew）"/>
-        <outline text="2.4 端接与拓扑（点对点/多点/端接策略）"/>
-        <outline text="2.5 过孔与转接（via stub/背钻/回流过孔/参考切换）"/>
-        <outline text="2.6 眼图/裕量/抖动（layout对margin的影响）"/>
+
+      <outline text="2. 电子/系统基础">
+        <outline text="2.1 数字电路基础（时序/抖动/同步异步）"/>
+        <outline text="2.2 常见高速接口基础（DDR/PCIe/USB/HDMI/MIPI/Ethernet）"/>
+        <outline text="2.3 器件与封装基础（BGA/QFN/连接器/寄生）"/>
       </outline>
-      <outline text="3. PCB 叠层与阻抗控制（Stackup）">
-        <outline text="3.1 叠层规划（层功能分配/参考面连续）"/>
-        <outline text="3.2 阻抗计算（单端/差分/线宽线距/介质）"/>
-        <outline text="3.3 材料与工艺（FR-4/低损耗/DK-DF/板厂能力）"/>
-        <outline text="3.4 回流路径（跨分割/缝隙/回流连续性）"/>
+
+      <outline text="3. PCB工艺与叠层/阻抗（制造能力决定上限）">
+        <outline text="3.1 板厂能力边界（线宽线距/孔径/阻焊桥/背钻/HDI）"/>
+        <outline text="3.2 叠层规划（层功能分配/参考面连续性）"/>
+        <outline text="3.3 材料与损耗（DK/DF/铜箔粗糙度/一致性）"/>
+        <outline text="3.4 阻抗控制（单端/差分/可调参数/coupon/公差）"/>
+        <outline text="3.5 过孔工艺（通孔/盲埋孔/微孔/VIPPO/背钻）"/>
       </outline>
-      <outline text="4. 电源完整性（PI/PDN）">
-        <outline text="4.1 PDN 基础（目标阻抗/频域/谐振）"/>
-        <outline text="4.2 去耦策略（选型/摆放/连接电感最小）"/>
-        <outline text="4.3 电源平面与电流回路（铜皮/过孔阵列/压降）"/>
-        <outline text="4.4 SSN/地弹/噪声耦合对SI影响"/>
+
+      <outline text="4. 传输线与信号完整性（SI 核心）">
+        <outline text="4.1 传输线模型（阻抗/反射/延迟/损耗）"/>
+        <outline text="4.2 串扰（NEXT/FEXT/耦合路径）"/>
+        <outline text="4.3 差分信号（差模/共模/模式转换/skew）"/>
+        <outline text="4.4 端接与拓扑（点对点/多点/端接策略）"/>
+        <outline text="4.5 过孔与转接（via stub/回流过孔/参考切换）"/>
+        <outline text="4.6 眼图/裕量/抖动（layout对margin的影响）"/>
       </outline>
-      <outline text="5. EMC/EMI/ESD">
-        <outline text="5.1 机理（环路面积/共模/缝隙天线）"/>
-        <outline text="5.2 接口防护与滤波（ESD/共模电感/π滤波）"/>
-        <outline text="5.3 分区与隔离（数模/电源区/敏感区）"/>
-        <outline text="5.4 屏蔽与接地（地围栏/过孔栅栏/参考处理）"/>
+
+      <outline text="5. 电源完整性（PI/PDN）">
+        <outline text="5.1 PDN 基础（目标阻抗/频域/谐振）"/>
+        <outline text="5.2 去耦策略（选型/摆放/连接电感最小）"/>
+        <outline text="5.3 电源平面与电流回路（铜皮/过孔阵列/压降）"/>
+        <outline text="5.4 SSN/地弹/噪声耦合对SI影响"/>
       </outline>
+
       <outline text="6. 布局（Placement）方法论">
         <outline text="6.1 功能分区与优先级"/>
         <outline text="6.2 关键链路布局（CPU↔DDR/SerDes↔连接器/时钟）"/>
         <outline text="6.3 BGA 扇出与通道规划（逃逸/via类型）"/>
-        <outline text="6.4 可制造/可返修（间距/方向/可达性）"/>
+        <outline text="6.4 供电/去耦布局（最短回路/回流连续）"/>
+        <outline text="6.5 可制造/可返修（间距/方向/可达性）"/>
       </outline>
+
       <outline text="7. 走线（Routing）规则体系">
         <outline text="7.1 规则制定（class/约束/长度/偏斜/间距/阻抗）"/>
         <outline text="7.2 DDR 专项（分组/等长/拓扑/参考切换）"/>
@@ -49,34 +57,45 @@
         <outline text="7.4 时钟专项（隔离/回流/噪声敏感）"/>
         <outline text="7.5 换层与回流（地过孔伴随/回流连续）"/>
       </outline>
-      <outline text="8. DFM/DFT/可靠性">
-        <outline text="8.1 工艺约束（线距孔径/阻焊/钢网/拼板）"/>
-        <outline text="8.2 可测性（测试点/ICT-FCT/调试便利）"/>
-        <outline text="8.3 可靠性（爬电/热/机械应力/连接器）"/>
+
+      <outline text="8. EMC/EMI/ESD">
+        <outline text="8.1 机理（环路面积/共模/缝隙天线）"/>
+        <outline text="8.2 接口防护与滤波（ESD/共模电感/π滤波）"/>
+        <outline text="8.3 分区与隔离（数模/电源区/敏感区）"/>
+        <outline text="8.4 屏蔽与接地（地围栏/过孔栅栏/参考处理）"/>
       </outline>
-      <outline text="9. 仿真/验证与协作流程">
-        <outline text="9.1 约束管理与评审（review checklist/签核）"/>
-        <outline text="9.2 SI/PI 工具认知（会看结果/会闭环）"/>
-        <outline text="9.3 bring-up 调试配合（示波器/探头/定位）"/>
-        <outline text="9.4 跨团队沟通（硬件/结构/工厂/ECO）"/>
+
+      <outline text="9. 热设计与热可靠性">
+        <outline text="9.1 热源识别与功耗/温升概念"/>
+        <outline text="9.2 散热路径（铜皮/热过孔/内层铺铜/散热器-导热垫）"/>
+        <outline text="9.3 热与SI/PI/可靠性耦合（温升对损耗/阻抗/器件降额）"/>
+        <outline text="9.4 验证（热像仪/温度点位/测试方法）"/>
       </outline>
-      <outline text="10. EDA工具与工程化能力">
-        <outline text="10.1 EDA熟练度（Allegro/Altium：约束/规则）"/>
-        <outline text="10.2 约束/规则工程化（复用/模板/脚本）"/>
-        <outline text="10.3 文档与交付（可追溯/变更记录）"/>
-        <outline text="10.4 自动化（批量DRC/报表/检查脚本）"/>
+
+      <outline text="10. DFM/DFT/可靠性（让板子做得出、装得上、测得了）">
+        <outline text="10.1 工艺约束（线距孔径/阻焊/钢网/拼板）"/>
+        <outline text="10.2 可测性（测试点/ICT-FCT/调试便利）"/>
+        <outline text="10.3 可靠性（爬电/热/机械应力/连接器）"/>
       </outline>
-      <outline text="11. 热设计与热可靠性">
-        <outline text="11.1 热源识别与功耗/温升概念"/>
-        <outline text="11.2 散热路径（铜皮/热过孔/内层铺铜/散热器-导热垫）"/>
-        <outline text="11.3 热与SI/PI/可靠性耦合（温升对损耗/阻抗/器件降额）"/>
-        <outline text="11.4 验证（热像仪/温度点位/测试方法）"/>
+
+      <outline text="11. 封装与建库（Library）">
+        <outline text="11.1 库体系（Symbol/Footprint/3D/属性）"/>
+        <outline text="11.2 封装规范（焊盘/阻焊/钢网/IPC-7351思路）"/>
+        <outline text="11.3 高速封装要点（BGA扇出/Via-in-Pad/背钻定义）"/>
+        <outline text="11.4 校验与版本管理（review/发布/可追溯）"/>
       </outline>
-      <outline text="12. 封装与建库（Library）">
-        <outline text="12.1 库体系（Symbol/Footprint/3D/属性）"/>
-        <outline text="12.2 封装规范（焊盘/阻焊/钢网/IPC-7351思路）"/>
-        <outline text="12.3 高速封装要点（BGA扇出/Via-in-Pad/背钻定义）"/>
-        <outline text="12.4 校验与版本管理（review/发布/可追溯）"/>
+
+      <outline text="12. 仿真/验证与调试闭环">
+        <outline text="12.1 SI/PI 工具认知（会看结果/会闭环）"/>
+        <outline text="12.2 bring-up 调试配合（示波器/探头/定位）"/>
+        <outline text="12.3 设计复盘（问题归因→规则迭代）"/>
+      </outline>
+
+      <outline text="13. EDA工具与工程化能力">
+        <outline text="13.1 EDA熟练度（Allegro/Altium：约束/规则）"/>
+        <outline text="13.2 约束/规则工程化（复用/模板/脚本）"/>
+        <outline text="13.3 文档与交付（可追溯/变更记录）"/>
+        <outline text="13.4 自动化（批量DRC/报表/检查脚本）"/>
       </outline>
     </outline>
   </body>
