@@ -62,9 +62,21 @@
       </outline>
       <outline text="10. EDA工具与工程化能力">
         <outline text="10.1 EDA熟练度（Allegro/Altium：约束/规则）"/>
-        <outline text="10.2 库管理（封装/3D/版本一致）"/>
+        <outline text="10.2 约束/规则工程化（复用/模板/脚本）"/>
         <outline text="10.3 文档与交付（可追溯/变更记录）"/>
-        <outline text="10.4 自动化（脚本/报表/规则复用）"/>
+        <outline text="10.4 自动化（批量DRC/报表/检查脚本）"/>
+      </outline>
+      <outline text="11. 热设计与热可靠性">
+        <outline text="11.1 热源识别与功耗/温升概念"/>
+        <outline text="11.2 散热路径（铜皮/热过孔/内层铺铜/散热器-导热垫）"/>
+        <outline text="11.3 热与SI/PI/可靠性耦合（温升对损耗/阻抗/器件降额）"/>
+        <outline text="11.4 验证（热像仪/温度点位/测试方法）"/>
+      </outline>
+      <outline text="12. 封装与建库（Library）">
+        <outline text="12.1 库体系（Symbol/Footprint/3D/属性）"/>
+        <outline text="12.2 封装规范（焊盘/阻焊/钢网/IPC-7351思路）"/>
+        <outline text="12.3 高速封装要点（BGA扇出/Via-in-Pad/背钻定义）"/>
+        <outline text="12.4 校验与版本管理（review/发布/可追溯）"/>
       </outline>
     </outline>
   </body>
